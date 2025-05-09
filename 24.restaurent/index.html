@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delicious Bites - Menu</title>
+    
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        .food-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .food-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .food-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #e74c3c;
+        }
+        .food-price {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .detail-img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .ui-header {
+            background: #e74c3c !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== HOME PAGE ========== -->
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>Delicious Bites</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Our Menu</h2>
+        <ul data-role="listview" data-inset="true">
+            <!-- Menu items will be loaded via JavaScript -->
+        </ul>
+    </div>
+</div>
+
+<!-- ========== DETAIL PAGE ========== -->
+<div data-role="page" id="details">
+    <div data-role="header">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Item Details</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <img src="" class="detail-img" id="detail-img">
+        <h2 id="detail-title"></h2>
+        <p id="detail-desc"></p>
+        <p><strong>Price: </strong><span id="detail-price"></span></p>
+    </div>
+</div>
+
+<!-- jQuery & jQuery Mobile -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    $(document).ready(function() {
+        // Menu Data
+        const menuItems = [
+            {
+                id: 1,
+                title: "Margherita Pizza",
+                desc: "Classic pizza with tomato sauce, mozzarella, and basil.",
+                price: "$12.99",
+                img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            },
+            {
+                id: 2,
+                title: "Burger & Fries",
+                desc: "Juicy beef patty with cheese, lettuce, and crispy fries.",
+                price: "$10.99",
+                img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            },
+            {
+                id: 3,
+                title: "Pasta Carbonara",
+                desc: "Creamy pasta with bacon, eggs, and parmesan cheese.",
+                price: "$14.99",
+                img: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            }
+        ];
+
+        // Load menu items
+        const $list = $("ul[data-role='listview']");
+        
+        menuItems.forEach(item => {
+            $list.append(`
+                <li>
+                    <a href="#details" onclick="showDetails(${item.id})">
+                        <img src="${item.img}" class="food-img">
+                        <h2 class="food-title">${item.title}</h2>
+                        <p class="food-price">${item.price}</p>
+                    </a>
+                </li>
+            `);
+        });
+
+        // Refresh listview
+        $list.listview("refresh");
+    });
+
+    // Show details when an item is clicked
+    function showDetails(id) {
+        const item = menuItems.find(item => item.id === id);
+        $("#detail-img").attr("src", item.img);
+        $("#detail-title").text(item.title);
+        $("#detail-desc").text(item.desc);
+        $("#detail-price").text(item.price);
+    }
+</script>
+</body>
+</html>
