@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Emergency Medical Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-danger text-white text-center py-3">
+        <h1><i class="fas fa-ambulance"></i> Pune Emergency Medical Services</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-hospital"></i> EMS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><i class="fas fa-medkit"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-phone"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row text-center" id="services">
+            <h2 class="mb-4">Our Emergency Services</h2>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-ambulance fa-3x text-danger mb-3"></i>
+                        <h4>Ambulance</h4>
+                        <p>24/7 Emergency Ambulance Services</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-user-md fa-3x text-primary mb-3"></i>
+                        <h4>Doctors</h4>
+                        <p>Emergency Medical Assistance</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-hospital fa-3x text-success mb-3"></i>
+                        <h4>Hospitals</h4>
+                        <p>Nearest Emergency Centers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Button -->
+        <div class="text-center mt-4" id="contact">
+            <button class="btn btn-danger btn-lg" onclick="openContact()">
+                <i class="fas fa-phone-alt"></i> Contact Us
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; Pune City Emergency Medical services</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function openContact() {
+            alert("Emergency Contact: +91456753234 \nEmail: emergency@gmail.com");
+        }
+    </script>
+</body>
+</html>

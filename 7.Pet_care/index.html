@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCare - Pet Care Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-paw"></i> PetCare</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="text-center py-5 bg-light">
+    <div class="container">
+      <h1 class="display-5 fw-bold">24/7 Pet Care Services</h1>
+      <p>Quick help for your furry friends, any time, any day.</p>
+      <a href="#services" class="btn btn-danger mt-3">Explore Services</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-icon mb-2">
+            <i class="fas fa-ambulance fa-3x text-danger"></i>
+          </div>
+          <h5>Pet Ambulance</h5>
+          <p>Rapid response transport for pets in critical condition.</p>
+          <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#ambulanceModal">Request Ambulance</button>
+        </div>
+        <div class="col-md-4">
+          <div class="service-icon mb-2">
+            <i class="fas fa-stethoscope fa-3x text-danger"></i>
+          </div>
+          <h5>Vets on Call</h5>
+          <p>Specialist vets ready to provide urgent medical care at your location.</p>
+          <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#vetModal">View Vets</button>
+        </div>
+        <div class="col-md-4">
+          <div class="service-icon mb-2">
+            <i class="fas fa-pills fa-3x text-danger"></i>
+          </div>
+          <h5>Pet Pharmacy</h5>
+          <p>Essential pet medicines delivered quickly.</p>
+          <button class="btn btn-outline-danger btn-sm" onclick="alert('Redirecting to Pet Pharmacy...')">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+            <textarea class="form-control mb-2" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-danger w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-danger text-white text-center py-3">
+    <p>&copy; 2025 PetCare. Pet Care Services in City.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

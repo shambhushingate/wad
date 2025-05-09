@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Tables</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f0f8ff;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 80px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 500px;
+      box-shadow: 0 0 10px #aaa;
+      min-height: 900px;
+    }
+    th, td {
+    width: 50%;          
+    text-align: center;
+    border: 1px solid #555;
+   }
+
+    th {
+      padding: 2px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .pass {
+      background-color: #d4edda;
+    }
+    .fail {
+      background-color: #f8d7da;
+    }
+  </style>
+</head>
+<body>
+  <!-- Table 1: Student Name and Result -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Result</th>
+    </tr>
+    <tr class="pass">
+      <td>Alice</td>
+      <td>Pass</td>
+    </tr>
+    <tr class="fail">
+      <td>Bob</td>
+      <td>Fail</td>
+    </tr>
+    <tr class="pass">
+      <td>Charlie</td>
+      <td>Pass</td>
+    </tr>
+  </table>
+
+  <!-- Table 2: Student Name and CGPA -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>CGPA</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>5.4</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>9.1</td>
+    </tr>
+  </table>
+</body>
+</html>

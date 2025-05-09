@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Organic Farm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Our Little Farm</h1>
+        <p>Fresh and Organic Goodness!</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="#">Our Farm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#offers">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h2>Taste the Freshness</h2>
+        <p>We grow healthy, organic food for you and your family.</p>
+        <img src="simple-farm-image.jpg" alt="A picture of our farm" width="300">
+    </div>
+
+    <div id="products" class="product-section">
+        <h2>Our Wonderful Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-item">
+                    <img src="tomato.jpg" alt="Fresh Tomatoes" width="100">
+                    <h3>Juicy Tomatoes</h3>
+                    <p>Grown with sunshine and care.</p>
+                    <p>Price: ₹ 40/kg</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <img src="spinach.jpg" alt="Fresh Spinach" width="100">
+                    <h3>Healthy Spinach</h3>
+                    <p>Packed with vitamins!</p>
+                    <p>Price: ₹ 25/bunch</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <img src="carrot.jpg" alt="Sweet Carrots" width="100">
+                    <h3>Sweet Carrots</h3>
+                    <p>Crunchy and delicious.</p>
+                    <p>Price: ₹ 30/kg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="offers" class="offers-section">
+        <h2>Special Deals and Pricing</h2>
+        <button id="offers-button" class="btn btn-primary">See Offers</button>
+        <div id="offers-content">
+            <h3>Current Offers</h3>
+            <ul>
+                <li>10% off on your first order!</li>
+                <li>Free delivery on orders over ₹ 500.</li>
+            </ul>
+            <h3>Delivery Charges</h3>
+            <p>Within 5km: ₹ 20</p>
+            <p>Beyond 5km: ₹ 40</p>
+        </div>
+    </div>
+
+    <div id="contact" class="bg-light py-3 text-center">
+        <h2>Get in Touch</h2>
+        <p>Email: info@myorganicfarm.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Organic Farm</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> </body>
+</html>

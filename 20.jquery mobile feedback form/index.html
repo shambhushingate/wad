@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form - jQuery Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .ui-toggle-switch .ui-slider {
+      background-color: #ddd;
+    }
+    .ui-slider-switch .ui-btn {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div data-role="page" id="feedbackPage">
+
+  <div data-role="header">
+    <h1>Feedback Form</h1>
+  </div>
+
+  <div data-role="content" class="ui-content">
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+      <label for="feedback">Feedback:</label>
+      <textarea name="feedback" id="feedback" placeholder="Your Feedback" required></textarea>
+
+      <label for="recommend">Would you recommend us?</label>
+      <select name="recommend" id="recommend" data-role="flipswitch">
+        <option value="no">No</option>
+        <option value="yes" selected>Yes</option>
+      </select>
+
+      <input type="submit" value="Submit Feedback">
+    </form>
+
+    <div id="result" style="margin-top: 20px;"></div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#feedbackForm').on('submit', function (e) {
+      e.preventDefault();
+
+      const name = $('#name').val();
+      const email = $('#email').val();
+      const feedback = $('#feedback').val();
+      const recommend = $('#recommend').val();
+
+      $('#result').html(`
+        <h3>Thank You!</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Feedback:</strong> ${feedback}</p>
+        <p><strong>Recommendation:</strong> ${recommend}</p>
+      `);
+
+      // Optionally reset form
+      this.reset();
+    });
+  });
+</script>
+
+</body>
+</html>

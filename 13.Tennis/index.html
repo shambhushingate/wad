@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All About Tennis</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-tennis-ball"></i> All About Tennis</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rules">Rules</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="text-center py-5 bg-light">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Welcome to Tennis World</h1>
+      <p>Everything you need to know about Tennis, its legends, and events.</p>
+      <a href="#players" class="btn btn-primary mt-3">Meet the Players</a>
+    </div>
+  </header>
+
+  <!-- Players Section -->
+  <section id="players" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Top Tennis Players</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="player-image mb-2">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Roger Federer" />
+          </div>
+          <h5>Roger Federer</h5>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#fedModal">Achievements</button>
+        </div>
+        <div class="col-md-4">
+          <div class="player-image mb-2">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Rafael Nadal" />
+          </div>
+          <h5>Rafael Nadal</h5>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#nadalModal">Achievements</button>
+        </div>
+        <div class="col-md-4">
+          <div class="player-image mb-2">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Serena Williams" />
+          </div>
+          <h5>Serena Williams</h5>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#serenaModal">Achievements</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Tennis Rules</h2>
+      <ul class="list-unstyled">
+        <li>1. Each match consists of a series of games, and each game is scored in points.</li>
+        <li>2. A player must win four points to win a game, with a margin of at least two points.</li>
+        <li>3. A match may be played in a best-of-three or best-of-five sets format.</li>
+      </ul>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rulesModal">Learn More</button>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Grand Slam Schedule</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Grand Slam</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Australian Open</td>
+            <td>January 2025</td>
+          </tr>
+          <tr>
+            <td>French Open</td>
+            <td>May 2025</td>
+          </tr>
+          <tr>
+            <td>Wimbledon</td>
+            <td>July 2025</td>
+          </tr>
+          <tr>
+            <td>US Open</td>
+            <td>August 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 All About Tennis. Tennis News and Info.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

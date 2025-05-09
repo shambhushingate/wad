@@ -1,0 +1,50 @@
+
+✅ Google App Engine Deployment Commands (Static Website)
+========================================================
+
+📁 1. Folder Structure
+----------------------
+my-static-site/
+├── index.html
+├── styles.css
+├── scripts.js
+└── app.yaml
+
+📝 2. app.yaml File Content
+---------------------------
+runtime: python39
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /(.*)
+  static_files: \1
+  upload: .*
+
+🧰 3. Install & Initialize Google Cloud SDK
+------------------------------------------
+gcloud init
+
+# Log in with Google account
+# Choose or create a project ID
+# Set default region (optional)
+
+🏗️ 4. Create App Engine Application
+-----------------------------------
+gcloud app create
+
+# Choose a region (e.g., asia-south1)
+
+🚀 5. Deploy Your App
+---------------------
+cd path/to/my-static-site
+gcloud app deploy
+
+# Type Y to confirm when prompted
+
+🌍 6. Open Your Website
+-----------------------
+gcloud app browse
+

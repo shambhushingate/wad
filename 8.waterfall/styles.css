@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .card-title {
+    color: #2f855a;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .btn-success {
+    background-color: #2f855a;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #276749;
+  }
+  

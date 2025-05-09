@@ -1,0 +1,39 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  #home {
+    background: #f8f9fa;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  /* Services Section */
+  #services {
+    background-color: #e9ecef;
+  }
+  
+  .service-icon {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f8f9fa;
+  }
+  
+  footer {
+    background-color: #28a745;
+  }
+  
+  /* Simple animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

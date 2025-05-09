@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waterfalls in India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">IndiaFalls</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#waterfalls">Waterfalls</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home" class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Explore the Stunning Waterfalls of India</h1>
+      <p class="lead">From the Western Ghats to the Northeast – Discover nature’s wonders</p>
+    </div>
+  </header>
+
+  <!-- Waterfalls Section -->
+  <section id="waterfalls" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5 text-success">Top Waterfalls</h2>
+      <div class="row g-4">
+        <!-- Waterfall 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Dudhsagar_Falls.jpg" class="card-img-top" alt="Dudhsagar Falls">
+            <div class="card-body">
+              <h5 class="card-title">Dudhsagar Falls, Goa</h5>
+              <p class="card-text">A spectacular four-tiered waterfall, known for its milky appearance.</p>
+              <button class="btn btn-success" onclick="showInfo('Goa Railway Station > Taxi to Mollem > Jeep to Dudhsagar Gate')">How to Reach</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waterfall 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Jog_Falls.jpg" class="card-img-top" alt="Jog Falls">
+            <div class="card-body">
+              <h5 class="card-title">Jog Falls, Karnataka</h5>
+              <p class="card-text">One of the highest plunge waterfalls in India, best seen during monsoons.</p>
+              <button class="btn btn-success" onclick="showInfo('Nearest Station: Shimoga > Bus/Taxi to Jog Falls')">How to Reach</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waterfall 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Chitrakoot_Water_Falls.jpg" class="card-img-top" alt="Chitrakote Falls">
+            <div class="card-body">
+              <h5 class="card-title">Chitrakote Falls, Chhattisgarh</h5>
+              <p class="card-text">Known as the 'Niagara of India', wide and majestic during peak flow.</p>
+              <button class="btn btn-success" onclick="showInfo('Jagdalpur Railway Station > Auto/Taxi to Chitrakote')">How to Reach</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3" id="contact">
+    <p>&copy; 2025 IndiaFalls. Discover Waterfalls in India. | <a href="#" class="text-white text-decoration-underline">Contact Us</a></p>
+  </footer>
+
+  <!-- Bootstrap & Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showInfo(message) {
+      alert("How to Reach: " + message);
+    }
+  </script>
+</body>
+</html>

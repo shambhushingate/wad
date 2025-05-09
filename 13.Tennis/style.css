@@ -1,0 +1,61 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  #home {
+    background: #f8f9fa;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  /* Players Section */
+  #players .player-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  #players h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  #players .btn {
+    margin-top: 10px;
+  }
+  
+  /* Rules Section */
+  #rules {
+    background-color: #e9ecef;
+  }
+  
+  #rules ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #rules ul li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+  }
+  
+  /* Schedule Section */
+  #schedule {
+    background-color: #f8f9fa;
+  }
+  
+  #schedule table th,
+  #schedule table td {
+    text-align: center;
+    padding: 12px 15px;
+  }
+  
+  footer {
+    background-color: #007bff;
+  }
+  

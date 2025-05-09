@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ShopEasy</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Products</a>
+            <a href="#">Orders</a>
+            <a href="#">Customers</a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <!-- Summary Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Total Sales</h3>
+                <p>₹12,345</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>246</p>
+            </div>
+            <div class="card">
+                <h3>Products</h3>
+                <p>1,024</p>
+            </div>
+            <div class="card">
+                <h3>Customers</h3>
+                <p>583</p>
+            </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="recent-orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1001</td>
+                        <td>Jayprakash</td>
+                        <td>₹125.99</td>
+                        <td class="status shipped">Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Sarang Upadhye</td>
+                        <td>₹89.50</td>
+                        <td class="status delivered">Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td>Mitheshh</td>
+                        <td>₹234.00</td>
+                        <td class="status pending">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>User Registration</h2>
+    <form id="registrationForm">
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="date" id="dob" required />
+      <div class="gender">
+        Gender:
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+      </div>
+      <input type="tel" id="mobile" placeholder="Mobile Number (10 digits)" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button type="submit">Register</button>
+    </form>
+    <a href="display.html" class="link">View Registered Users</a>
+    <button onclick="downloadZip()">Download Project as ZIP</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

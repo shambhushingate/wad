@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background-color: #5cb85c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #e9ecef;
+}
+
+.navbar-brand {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #333 !important;
+    margin-left: 10px;
+}
+
+.hero {
+    background-color: #f0fff0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-section {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offers-section {
+    background-color: #e9ecef;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#offers-content {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

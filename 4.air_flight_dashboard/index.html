@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTravel - Flight Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-plane"></i> SkyTravel
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search flights...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="#"><i class="fas fa-ticket-alt"></i> Bookings</a>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <!-- Flight Search -->
+        <div class="flight-search">
+            <h2>Book a Flight</h2>
+            <div class="search-form">
+                <div class="form-group">
+                    <label>From</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+                <div class="form-group">
+                    <label>Departure</label>
+                    <input type="date">
+                </div>
+                <button class="search-btn">Search Flights</button>
+            </div>
+        </div>
+
+        <!-- Upcoming Flights -->
+        <div class="upcoming-flights">
+            <h2>Upcoming Flights</h2>
+            <div class="flights-list">
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="flight-time">
+                            <strong>10:00</strong>
+                            <span>DEL</span>
+                        </div>
+                        <div class="flight-duration">
+                            <i class="fas fa-plane"></i>
+                            <span>2h 15m</span>
+                        </div>
+                        <div class="flight-time">
+                            <strong>12:15</strong>
+                            <span>BOM</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <span class="airline">Air India</span>
+                        <span class="flight-no">AI-101</span>
+                        <button class="book-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="flight-time">
+                            <strong>14:30</strong>
+                            <span>BOM</span>
+                        </div>
+                        <div class="flight-duration">
+                            <i class="fas fa-plane"></i>
+                            <span>1h 45m</span>
+                        </div>
+                        <div class="flight-time">
+                            <strong>16:15</strong>
+                            <span>DEL</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <span class="airline">IndiGo</span>
+                        <span class="flight-no">6E-205</span>
+                        <button class="book-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

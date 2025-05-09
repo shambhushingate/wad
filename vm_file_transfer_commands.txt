@@ -1,0 +1,27 @@
+
+📤 File Transfer Between Virtual Machines using SCP & SSH
+=========================================================
+
+🧰 1. Install OpenSSH Server on Both VMs
+----------------------------------------
+sudo apt update
+sudo apt install openssh-server
+
+🌐 2. Find IP Address of Target VM
+----------------------------------
+ip a
+
+
+📝 3. (Optional) Create/Edit a Text File
+----------------------------------------
+echo "        " >> exam.txt
+
+📦 4. Transfer File Using SCP
+-----------------------------
+scp filename vagrant@<ip-address>:/home/vagrant
+
+
+# scp exam.txt vagrant@192.168.56.101:/home/vagrant
+
+
+

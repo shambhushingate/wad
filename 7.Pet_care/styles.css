@@ -1,0 +1,33 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+#home {
+  background: #f8f9fa;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Services Section */
+#services {
+  background-color: #e9ecef;
+}
+
+#services .col-md-4 img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f8f9fa;
+}
+
+footer {
+  background-color: #28a745;
+}
