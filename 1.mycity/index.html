@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WAI - City of Temples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WAI</h1>
+        <p>The City of Temples and Ghats</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#landmarks">Landmarks</a>
+        <a href="#about">About</a>
+    </nav>
+    
+    <div class="container" id="home">
+        <h2>Welcome to WAI</h2>
+        <p>Explore the beautiful temples and ghats of this historic city.</p>
+    </div>
+    
+    <div class="container" id="landmarks">
+        <h2>Famous Landmarks</h2>
+        
+        <div class="landmark">
+            <h3 class="ganapati">1. Ganapati Ghat Wai</h3>
+            <button data-landmark="ganapati">View Details</button>
+        </div>
+        
+        <div class="landmark">
+            <h3 class="kashi">2. Kashi Vishweshwar Temple</h3>
+            <button data-landmark="kashi">View Details</button>
+        </div>
+        
+        <div class="landmark">
+            <h3 class="menawali">3. Menawali Ghat</h3>
+            <button data-landmark="menawali">View Details</button>
+        </div>
+        
+        <div class="landmark">
+            <h3 class="dhom">4. Dhom Dam</h3>
+            <button data-landmark="dhom">View Details</button>
+        </div>
+        
+        <div class="landmark">
+            <h3 class="mahableshwar">5. Mahableshwar</h3>
+            <button data-landmark="mahableshwar">View Details</button>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Landmark Details</h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 WAI Tourism</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
