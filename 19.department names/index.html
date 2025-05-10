@@ -9,7 +9,7 @@
 
     <style>
         .department-name {
-            background: #8e44ad; /* Purple */
+            background: #3498db; /* Changed to blue */
             color: white;
             text-align: center;
             line-height: 60px;
@@ -21,7 +21,7 @@
         }
 
         .department-button {
-            background: #27ae60 !important; /* Green */
+            background: #e74c3c !important; /* Changed to red */
             color: white !important;
             border-radius: 10px !important;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -29,22 +29,31 @@
         }
 
         .department-button:hover {
-            background: #1e8449 !important; /* Darker green on hover */
+            background: #c0392b !important; /* Darker red on hover */
         }
 
         .back-button {
-            background: #7f8c8d !important; /* Dark gray */
+            background: #95a5a6 !important; /* Changed to lighter gray */
             color: white !important;
             border-radius: 10px !important;
         }
 
         .ui-header {
-            background: #34495e !important; /* Dark blue-gray */
+            background: #2c3e50 !important; /* Dark blue */
             color: white !important;
         }
 
         .ui-content {
             text-align: center;
+        }
+        
+        /* Added space between grid blocks */
+        .ui-grid-d .ui-block-a,
+        .ui-grid-d .ui-block-b,
+        .ui-grid-d .ui-block-c,
+        .ui-grid-d .ui-block-d,
+        .ui-grid-d .ui-block-e {
+            padding: 10px;
         }
     </style>
 </head>
@@ -139,5 +148,3 @@
 
 </body>
 </html>
-
-
